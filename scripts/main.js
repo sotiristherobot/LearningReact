@@ -8,8 +8,14 @@ var ReactDOM = require('react-dom');
 //this will give us the <StorePicker/>
 var StorePicker = React.createClass({
    render : function () {
+       //you can only return a single element
        return(
-           <p>Hello React </p>
+       {/* these are comments in jsx */}
+           <form className="store-selector">
+               <h2>Please Enter a Store </h2>
+               <input type="text" ref="storeId" required/>
+               <input type="Submit"/>
+           </form>
        )
    } 
 });
