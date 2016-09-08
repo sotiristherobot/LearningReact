@@ -28,10 +28,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <marker date="1473209480000" expanded="true" signature="31:591" ph="..." />
-                <marker date="1473209480000" expanded="true" signature="369:583" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,9 +36,15 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="443">
+              <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+              <folding>
+                <element signature="e#1216#1305#0" expanded="false" />
+                <element signature="e#1356#1449#0" expanded="false" />
+                <element signature="e#1553#1865#0" expanded="false" />
+                <marker date="1473298609000" expanded="false" signature="408:688" ph="{...}" />
+                <marker date="1473298609000" expanded="false" signature="733:1173" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473209519579</updated>
-      <workItem from="1473209520914" duration="3484000" />
+      <workItem from="1473209520914" duration="4459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3484000" />
+    <option name="totallyTimeSpent" value="4459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -229,18 +232,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <marker date="1473209480000" expanded="true" signature="31:591" ph="..." />
-            <marker date="1473209480000" expanded="true" signature="369:583" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-          <folding />
+        <state relative-caret-position="443">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+          <folding>
+            <element signature="e#1216#1305#0" expanded="false" />
+            <element signature="e#1356#1449#0" expanded="false" />
+            <element signature="e#1553#1865#0" expanded="false" />
+            <marker date="1473298609000" expanded="false" signature="408:688" ph="{...}" />
+            <marker date="1473298609000" expanded="false" signature="733:1173" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

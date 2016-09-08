@@ -3,6 +3,13 @@ var React = require('react');
 //request the dom renderer
 var ReactDOM = require('react-dom');
 
+//request react router
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var Navigation = ReactRouter.Navigation;
+var createBrowserHistory = require('history/lib/createBrowserHistory');
+
 
 //App Component
 var App = React.createClass({
@@ -41,8 +48,6 @@ var Header = React.createClass({
     }
 });
 
-
-
 // Order
 var Order = React.createClass({
 
@@ -69,8 +74,6 @@ var Inventory = React.createClass({
     }
 });
 
-
-
 // StorePicker component
 //this will give us the <StorePicker/>
 var StorePicker = React.createClass({
@@ -86,6 +89,24 @@ var StorePicker = React.createClass({
    } 
 });
 
+//Not fount component
+var NotFound = React.createClass({
+    render : function(){
+        return <h1>Not found!</h1>
+    }
+});
+
+//Routes
+var routes = (
+
+    // did history to not get this in the url : /#/asdklasdkl;a
+    <Router history={createBrowserHistory()}>
+        <Route path="/" component={StorePicker}/>
+        {/*{ because we don't know in advance how many stores we will have}*/}
+        <Route path="/store/:storeid" component={App}/>
+        <Route path="*" component={NotFound}/>
+    </Router>
+)
 
 //DOM renderer
-ReactDOM.render(<App/>, document.querySelector('#main'));
+ReactDOM.render(routes, document.querySelector('#main'));
