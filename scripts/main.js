@@ -8,8 +8,12 @@ var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var Navigation = ReactRouter.Navigation;
+var History = ReactRouter.History;
 var createBrowserHistory = require('history/lib/createBrowserHistory');
 
+
+//helpers
+var h = require('./helpers.js');
 
 //App Component
 var App = React.createClass({
@@ -17,7 +21,7 @@ var App = React.createClass({
        return(
          <div className="catch-of-the-day">
             <div className="menu">
-                <Header tagline = "Freash Seafood Market"/>
+                <Header tagline = "Fresh Seafood Market"/>
             </div>
              <Order/>
              <Inventory/>
@@ -77,12 +81,27 @@ var Inventory = React.createClass({
 // StorePicker component
 //this will give us the <StorePicker/>
 var StorePicker = React.createClass({
-   render : function () {
+    mixins : [History],
+    goToStore: function (event) {
+        //stops forms default event
+        event.preventDefault();
+
+        //get data from input
+
+        //this refers to StorePicker not this function
+        console.log(this.refs);
+        var StoreID = this.refs.storeId.value;
+        console.log(StoreID);
+        //transition from StorePicker to App
+        this.history.pushState(null, '/store/' + StoreID);
+        
+    },
+    render : function () {
        //you can only return a single element
        return(
-           <form className="store-selector">
+           <form className="store-selector" onSubmit={this.goToStore}>
                <h2>Please Enter a Store </h2>
-               <input type="text" ref="storeId" required/>
+               <input type="text" ref="storeId" defaultValue={h.getFunName()} required/>
                <input type="Submit"/>
            </form>
        )
